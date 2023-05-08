@@ -1,0 +1,119 @@
+section.top {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 0 1.5rem;
+  gap: .2rem;
+  a {
+    padding: 1rem 0;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center;
+    strong {
+      user-select: none;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+  button {
+    box-sizing: content-box;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+  }
+  .theme-switcher {
+    svg {
+      height: 100%;
+      width: 80%;
+      transition: all 10s;
+      &:nth-child(1) {
+        color: #fff;
+      }
+      &:nth-child(2) {
+        color: #000;
+      }
+      &:hover {
+        transform: rotate(1900deg);
+      }
+    }
+  }
+  .lang-switcher {
+    img {
+      height: 100%;
+      width: 90%;
+    }
+  }
+  @media (max-width: 600px) {
+    a {
+      strong {
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+section.socials {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    box-sizing: content-box;
+    font-size: 1.2rem;
+    padding: .5rem;
+    color: #fff;
+  }
+  div.line {
+    height: 10vh;
+    width: 1.5px;
+    background: #fff;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  &:hover {
+    div.line {
+      height: 12vh;
+    }
+  }
+}
+
+section.navigation {
+  z-index: 1;
+  position: fixed;
+  bottom: 40%;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    cursor: pointer;
+    position: relative;
+    box-sizing: content-box;
+    font-size: 1.3rem;
+    padding: .5rem;
+    color: #fff;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+    path {
+      pointer-events: none;
+    }
+    &.active {
+      font-size: 2rem;
+      padding: .5rem 0;
+    }
+  }
+}

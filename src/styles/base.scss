@@ -1,0 +1,41 @@
+body {
+  background: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+div.pages {
+  display: flex;
+  height: 100%;
+  z-index: -1;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+main {
+  min-width: 100vw;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 6rem;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222 #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
