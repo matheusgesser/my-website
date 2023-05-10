@@ -1,0 +1,55 @@
+main#about {
+  section.profile,
+  section.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  section.profile {
+    flex-direction: row;
+    img {
+      width: 15rem;
+      border-radius: 50%;
+      filter: contrast(1.05);
+      transform: rotate(2deg);
+    }
+    p {
+      font-size: 1.3rem;
+      text-align: justify;
+      span {
+        font-size: 1.3rem;
+      }
+    }
+    @media (max-width:1000px) {
+      flex-direction: column;
+    }
+  }
+  section.content {
+    flex-direction: column;
+    h3 {
+      font-family: 'Gruppo';
+      font-size: 2rem;
+    }
+    section.skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      img {
+        height: 2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:nth-child(-n+2),
+        &:nth-child(6) {
+          border: 1px solid #fff;
+          filter: drop-shadow(0 0 5px #ffffff60);
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
