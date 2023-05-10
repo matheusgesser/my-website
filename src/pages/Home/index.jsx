@@ -1,7 +1,7 @@
 import './styles.scss'
-import JSLogo from '../../assets/js.png'
-import ReactLogo from '../../assets/react.png'
-import SassLogo from '../../assets/sass.png'
+import JSLogo from '../../assets/home/js.png'
+import ReactLogo from '../../assets/home/react.png'
+import SassLogo from '../../assets/home/sass.png'
 import { useEffect } from 'react'
 import { useAnimations } from './useAnimations'
 
