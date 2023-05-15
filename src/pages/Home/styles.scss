@@ -6,6 +6,10 @@ main#home {
     font-size: 4rem;
     font-weight: 800;
     line-height: 4rem;
+    text-shadow:
+    0 0 7px #555,
+    0 0 10px #555,
+    0 0 21px #555,
   }
   h2 {
     font-family: 'Gruppo';
@@ -13,7 +17,11 @@ main#home {
     font-weight: 400;
     line-height: 3rem;
     letter-spacing: 1px;
-    color: #bbb
+    color: #bbb;
+    text-shadow:
+    0 0 7px #444,
+    0 0 10px #444,
+    0 0 21px #444;
   }
   img {
     position: absolute;

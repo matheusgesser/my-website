@@ -4,8 +4,8 @@ import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import { AiFillHome, AiFillQuestionCircle, AiFillCode, AiFillMessage } from 'react-icons/ai'
-import USFlag from '../../assets/us.svg'
-import BRFlag from '../../assets/br.svg'
+import USFlag from '../../assets/flags/us.svg'
+import BRFlag from '../../assets/flags/br.svg'
 
 export function Things() {
   const [theme, setTheme] = useState('dark')
@@ -30,7 +30,7 @@ export function Things() {
     <>
       <section className='top'>
         <a href='#home'>
-          <strong>Matheus Gesser</strong>
+          <strong>MG</strong>
         </a>
         <button className='theme-switcher' onClick={toggleTheme}>
           {theme == 'light' ?
