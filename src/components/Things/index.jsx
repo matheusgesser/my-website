@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './styles.scss'
 import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -7,18 +6,8 @@ import { AiFillHome, AiFillQuestionCircle, AiFillCode, AiFillMessage } from 'rea
 import USFlag from '../../assets/flags/us.svg'
 import BRFlag from '../../assets/flags/br.svg'
 
-export function Things() {
-  const [theme, setTheme] = useState('dark')
-  const [lang, setLang] = useState('br')
-
-  function toggleTheme() {
-    setTheme(theme == 'dark' ? 'light' : 'dark')
-  }
-
-  function toggleLang() {
-    setLang(lang == 'br' ? 'us' : 'br')
-  }
-
+export function Things({ theme, toggleTheme, lang, toggleLang }) {
+  
   function handleNav(event) {
     document.querySelectorAll('.active').forEach(el => {
       el.classList.remove('active')
@@ -28,9 +17,9 @@ export function Things() {
 
   return (
     <>
-      <section className='top'>
+      <aside className={`top ${theme}`}>
         <a href='#home'>
-          <strong>MG</strong>
+          <strong>MG {theme} {lang}</strong>
         </a>
         <button className='theme-switcher' onClick={toggleTheme}>
           {theme == 'light' ?
@@ -42,21 +31,21 @@ export function Things() {
           <img src={USFlag} alt='United States Flag' /> :
           <img src={BRFlag} alt='Brazil Flag' />}
         </button>
-      </section>
+      </aside>
 
-      <section className='socials'>
+      <aside className={`socials ${theme}`}>
         <a href='https://github.com/matheusgesser' target='_blank' rel='noreferrer'><FaGithub /></a>
         <a href='https://www.linkedin.com/in/matheusgesser/' target='_blank' rel='noreferrer'><FaLinkedin /></a>
         <a href='mailto:matheusmvg@hotmail.com' target='_blank' rel='noreferrer'><GrMail /></a>
         <div className='line' />
-      </section>
+      </aside>
 
-      <section className='navigation'>
+      <aside className={`navigation ${theme}`}>
         <a href='#home' onClick={handleNav}><AiFillHome className='active' /></a>
         <a href='#about' onClick={handleNav}><AiFillQuestionCircle /></a>
         <a href='#projects' onClick={handleNav}><AiFillCode /></a>
         <a href='#contact' onClick={handleNav}><AiFillMessage /></a>
-      </section>
+      </aside>
     </>
   )
 }

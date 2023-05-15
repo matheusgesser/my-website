@@ -5,7 +5,7 @@ import SassLogo from '../../assets/home/sass.png'
 import { useEffect } from 'react'
 import { useAnimations } from './useAnimations'
 
-export function Home() {
+export function Home({ theme, t }) {
   useAnimations()
 
   useEffect(() => {
@@ -23,9 +23,9 @@ export function Home() {
   }
 
   return (
-    <main id='home' onMouseMove={IconMove}>
+    <main id='home' className={theme} onMouseMove={IconMove}>
       <h1 data-speedx={8} data-speedy={5}>Matheus Gesser</h1>
-      <h2 data-speedx={20} data-speedy={-10}>Front-end Developer</h2>
+      <h2 data-speedx={20} data-speedy={-10}>{t('position')}</h2>
         <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
         <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
         <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />

@@ -5,7 +5,7 @@ main#about {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem;
+    gap: 4rem;
   }
   section.profile {
     flex-direction: row;
@@ -16,7 +16,8 @@ main#about {
       transform: rotate(2deg);
     }
     p {
-      font-size: 1.3rem;
+      width: 60%;
+      font-size: 1.2rem;
       text-align: justify;
       span {
         font-size: 1.3rem;
@@ -30,22 +31,22 @@ main#about {
     flex-direction: column;
     h3 {
       font-family: "Gruppo";
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     section.skills {
+      max-width: 60rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
       img {
-        height: 2rem;
+        height: 2.5rem;
         cursor: pointer;
         transition: all 0.3s;
         &:nth-child(-n + 2),
         &:nth-child(6) {
           border: 1px solid #fff;
           box-shadow: none;
-          animation: pulsate 1.5s ease-in-out infinite alternate;
         }
         &:hover {
           transform: scale(1.1);
@@ -53,13 +54,18 @@ main#about {
       }
     }
   }
-}
-
-@keyframes pulsate {
-  from {
-    box-shadow: none;
-  }
-  to {
-    box-shadow: 0 0 4px #555, 0 0 6px #555, 0 0 15px #555;
+  &.light {
+    background: #fff;
+    color: #111;
+    section.content {
+      section.skills {
+        img {
+          &:nth-child(-n + 2),
+          &:nth-child(6) {
+            border: 1px solid #000;
+          }
+        }
+      }
+    }
   }
 }

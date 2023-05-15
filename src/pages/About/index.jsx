@@ -12,17 +12,17 @@ import SassLogo from '../../assets/skills/sass.jpg'
 import StyledComponentsLogo from '../../assets/skills/styled-components.jpg'
 
 
-export function About() {
+export function About({ theme, t }) {
   // useAnimations()
 
   return (
-    <main id='about'>
+    <main id='about' className={theme}>
       <section className="profile">
           <img src={ProfilePic} alt="Matheus' front picture" />
-        <p><span>❝</span>Graduating in Systems Analysis and Development, with a keen eye for problem detection and solution finding, endowed with a great ability to learn, skill to adjust to changes, curious spirit and always seeking growth and development in the work environment<span>❞</span></p>
+        <p><span>❝</span>{t('about')}<span>❞</span></p>
       </section>
       <section className="content">
-        <h3>Skills</h3>
+        <h3>{t('skills')}</h3>
         <section className="skills">
           <img src={ReactLogo} alt="React logo" />
           <img src={JavaScriptLogo} alt="React logo" />
