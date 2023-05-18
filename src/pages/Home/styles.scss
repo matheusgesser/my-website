@@ -7,6 +7,11 @@ main#home {
     font-weight: 800;
     line-height: 4rem;
     text-shadow: 0 0 7px #555, 0 0 10px #555, 0 0 21px #555;
+    @media (max-width: 800px) {
+      font-size: 3rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
   }
   h2 {
     font-family: "Gruppo";
@@ -16,24 +21,43 @@ main#home {
     letter-spacing: 1px;
     color: #bbb;
     text-shadow: 0 0 7px #444, 0 0 10px #444, 0 0 21px #444;
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      line-height: 0.7rem;
+    }
   }
   img {
     position: absolute;
     width: 12rem;
     border-radius: 50%;
     border: 5px solid #fff;
+    @media (max-width: 1400px) {
+      width: 9rem;
+    }
   }
   img#js {
     top: 18vh;
     right: 16vw;
+    @media (max-width: 500px) {
+      top: 14vh;
+      right: 0;
+    }
   }
   img#react {
     top: 28vh;
     left: 12vw;
+    @media (max-width: 500px) {
+      top: 20vh;
+      left: 0;
+    }
   }
   img#sass {
     bottom: 16vh;
     right: 26vw;
+    @media (max-width: 500px) {
+      bottom: 15vh;
+      right: 8vw;
+    }
   }
   &.light {
     background: #fff;
@@ -48,14 +72,6 @@ main#home {
     h2 {
       color: #111;
       text-shadow: 0 0 7px #ccc, 0 0 10px #ccc, 0 0 21px #ccc;
-    }
-  }
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 3rem;
-    }
-    h2 {
-      font-size: 2rem;
     }
   }
 }
