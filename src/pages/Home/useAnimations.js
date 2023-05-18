@@ -7,9 +7,9 @@ export function useAnimations() {
       gsap.registerPlugin(ScrollTrigger)
       let homeAnim = gsap.timeline({
         scrollTrigger: {
-          horizontal: true,
           trigger: '#home',
-          start: 'left center',
+          start: 'top center',
+          end: 'bottom center',
           toggleActions: 'play reset play reset',
         },
       })

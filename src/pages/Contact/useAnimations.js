@@ -7,9 +7,9 @@ export function useAnimations() {
       gsap.registerPlugin(ScrollTrigger)
       let contactAnim = gsap.timeline({
         scrollTrigger: {
-          horizontal: true,
           trigger: '#contact',
-          start: 'left center',
+          start: 'top center',
+          end: 'bottom center',
           toggleActions: 'play reset play reset',
         },
       })

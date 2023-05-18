@@ -4,16 +4,13 @@ body {
 }
 
 div.pages {
-  display: flex;
   height: 100%;
   z-index: -1;
   color: #fff;
-  scroll-behavior: smooth;
 }
 
 main {
-  min-width: 100vw;
-  min-height: 98vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
