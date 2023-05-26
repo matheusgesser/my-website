@@ -10,7 +10,7 @@ export function useAnimations() {
           trigger: '#contact',
           start: 'top center',
           end: 'bottom center',
-          toggleActions: 'play reset play reset',
+          toggleActions: 'play pause play pause',
         },
       })
       contactAnim.from('', {
