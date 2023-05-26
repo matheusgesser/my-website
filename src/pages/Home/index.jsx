@@ -2,16 +2,10 @@ import './styles.scss'
 import JSLogo from '../../assets/home/js.png'
 import ReactLogo from '../../assets/home/react.png'
 import SassLogo from '../../assets/home/sass.png'
-import { useEffect } from 'react'
 import { useAnimations } from './useAnimations'
 
 export function Home({ theme, t }) {
   useAnimations()
-
-  useEffect(() => {
-    window.addEventListener('mousemove', IconMove)
-    return () => window.removeEventListener('mousemove', IconMove)
-  })
   
   function IconMove(event) {
     let { clientX: posX, clientY: posY } = event;
