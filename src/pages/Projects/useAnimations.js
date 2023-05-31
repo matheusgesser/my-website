@@ -10,7 +10,7 @@ export function useAnimations() {
           trigger: '#projects',
           start: 'top center',
           end: 'bottom center',
-          toggleActions: 'play pause play pause',
+          toggleActions: 'play reset play reset',
         },
       })
       projectsAnim.from('', {
