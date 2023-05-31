@@ -1,10 +1,10 @@
 import './styles.scss'
-// import { useAnimations } from './useAnimations'
+import { useAnimations } from './useAnimations'
 import ProfilePic from '../../assets/profile.jpg'
 import { RxDownload } from 'react-icons/rx'
 
 export function About({ theme, t }) {
-  // useAnimations()
+  useAnimations()
 
   return (
     <main id='about' className={theme}>
