@@ -11,7 +11,6 @@ export function useAnimations() {
           start: 'top center',
           end: 'bottom center',
           toggleActions: 'play reset play reset',
-          markers: true
         },
       })
       aboutAnim.from('.profile', {
