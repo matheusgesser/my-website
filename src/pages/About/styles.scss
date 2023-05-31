@@ -41,13 +41,24 @@ main#about {
       flex-wrap: wrap;
       gap: 2rem;
       padding: 2rem;
-      background: #888;
       h2 {
         font-size: 1.5rem;
         transition: all 0.3s;
         &.major {
           text-shadow: 0 0 10px #ffffff70;
         }
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      svg {
+        display: inline;
+        font-size: 1.1rem;
       }
     }
   }

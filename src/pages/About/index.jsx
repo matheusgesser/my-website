@@ -1,6 +1,7 @@
 import './styles.scss'
 // import { useAnimations } from './useAnimations'
 import ProfilePic from '../../assets/profile.jpg'
+import { RxDownload } from 'react-icons/rx'
 
 export function About({ theme, t }) {
   // useAnimations()
@@ -22,6 +23,9 @@ export function About({ theme, t }) {
           <h2>Sass</h2>
           <h2>StyledComponents</h2>
         </section>
+        <button>
+          <RxDownload />{t('resume')}
+        </button>
       </section>
     </main>
   )
