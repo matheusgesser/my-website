@@ -9,7 +9,7 @@ export function useAnimations() {
         scrollTrigger: {
           trigger: '#contact',
           start: 'top center',
-          end: 'bottom center',
+          end: 'bottom top',
           toggleActions: 'play reset play reset',
         },
       })
