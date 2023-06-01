@@ -62,6 +62,9 @@ main#about {
       padding: 1rem 2rem;
       text-transform: uppercase;
       cursor: pointer;
+      background: #fff;
+      color: #111;
+      border: none;
       svg {
         display: inline;
         font-size: 1.1rem;
@@ -84,6 +87,11 @@ main#about {
       }
     }
     section.content {
+      button {
+        background: #111;
+        color: #fff;
+        border: none;
+      }
       section.skills {
         h2 {
           &.major {
