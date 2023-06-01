@@ -34,6 +34,9 @@ main#home {
     @media (max-width: 1400px) {
       width: 9rem;
     }
+    @media (max-width: 400px) {
+      width: 5rem;
+    }
   }
   img#js {
     top: 18vh;

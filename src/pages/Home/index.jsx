@@ -11,7 +11,6 @@ export function Home({ theme, t }) {
     let { clientX: posX, clientY: posY } = event;
     let icons = document.querySelectorAll('[data-speedx]')
     icons.forEach(icon => {
-      if (icon.style.opacity < 1) return
       icon.style.transform = `translate(${posX*icon.dataset.speedx/window.innerWidth}px, ${posY*icon.dataset.speedy/window.innerHeight}px)`
     })
   }

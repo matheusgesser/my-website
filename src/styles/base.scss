@@ -6,6 +6,7 @@ body {
 div.pages {
   height: 100%;
   z-index: -1;
+  overflow-x: hidden;
   color: #fff;
 }
 
@@ -15,7 +16,10 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 6rem;
+  padding: 6rem;
+  @media (max-width: 600px) {
+    padding: 4rem;
+  }
 }
 
 * {

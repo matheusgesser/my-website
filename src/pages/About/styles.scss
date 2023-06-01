@@ -22,9 +22,15 @@ main#about {
       span {
         font-size: 1.3rem;
       }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
     @media (max-width: 1000px) {
       flex-direction: column;
+    }
+    @media (max-width: 600px) {
+      padding: 0rem;
     }
   }
   section.content {
@@ -60,6 +66,13 @@ main#about {
         display: inline;
         font-size: 1.1rem;
       }
+      @media (max-width: 600px) {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+      }
+    }
+    @media (max-width: 600px) {
+      padding: 0;
     }
   }
   &.light {
